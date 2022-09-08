@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "wmr",
     "build": "wmr build",
-    "serve": "wmr serve --http2"
+    "start": "wmr serve"
   },
   "repository": {
     "type": "git",
