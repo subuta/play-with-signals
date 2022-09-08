@@ -1,0 +1,30 @@
+{
+  "name": "play-with-signals",
+  "version": "1.0.0",
+  "description": "Testing @preact/signals",
+  "main": "index.js",
+  "scripts": {
+    "dev": "wmr",
+    "build": "wmr build",
+    "serve": "wmr serve --http2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/subuta/play-with-signals.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/subuta/play-with-signals/issues"
+  },
+  "homepage": "https://github.com/subuta/play-with-signals#readme",
+  "devDependencies": {
+    "wmr": "^3.7.2"
+  },
+  "dependencies": {
+    "@preact/signals": "^1.0.3",
+    "preact": "^10.10.6",
+    "twind": "^0.16.17"
+  }
+}
