@@ -20,6 +20,9 @@
   },
   "homepage": "https://github.com/subuta/play-with-signals#readme",
   "devDependencies": {
+    "@swc/core": "^1.2.249",
+    "@swc/jest": "^0.2.22",
+    "jest": "27.5.1",
     "wmr": "^3.7.2"
   },
   "dependencies": {

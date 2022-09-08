@@ -1,19 +1,28 @@
-import { signal, effect } from "@preact/signals";
+import { signal } from "@preact/signals";
 
-export const todos = signal([
-  { text: 'things to do' }
-]);
+export const initialize = () => {
+  const todos = signal([
+    { text: 'things to do' }
+  ]);
 
-export const addTodo = () => {
-  if (text.value === '') return
-  todos.value = [...todos.value, {
-    text: text.value
-  }]
-  text.value = ''
+  const addTodo = () => {
+    if (text.value === '') return
+    todos.value = [...todos.value, {
+      text: text.value
+    }]
+    text.value = ''
+  }
+
+  const removeTodo = (todo) => {
+    todos.value = todos.value.filter((t) => t.text !== todo.text)
+  }
+
+  const text = signal("");
+
+  return {
+    todos,
+    text,
+    addTodo,
+    removeTodo
+  }
 }
-
-export const removeTodo = (todo) => {
-  todos.value = todos.value.filter((t) => t.text !== todo.text)
-}
-
-export const text = signal("");
